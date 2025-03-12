@@ -20,7 +20,7 @@ const updatePosition = () => {
 }
 
 function loop() {
-    updatePosition;
+    updatePosition();
     requestAnimationFrame(loop);
 }
 
@@ -39,19 +39,6 @@ cursorModifiers.forEach((cursorModifier) => {
         cursor.classList.remove(attribute);
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
